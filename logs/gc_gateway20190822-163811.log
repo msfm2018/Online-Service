@@ -1,0 +1,48 @@
+
+=ERROR REPORT==== 22-Aug-2019::16:38:29 ===
+** Generic server <0.90.0> terminating 
+** Last message in was {tcp,#Port<0.915>,
+                            <<129,143,14,218,2,60,117,248,50,68,62,235,32,6,
+                              44,179,108,90,97,248,127>>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.915>}
+** Reason for termination == 
+** {{badmatch,[{<<"0x01">>,<<"info">>}]},
+    [{hub_client_gc_wc,loop,2,[{file,"hub_client_gc_wc.erl"},{line,36}]},
+     {client_handle,websocket_handle_data,1,
+                    [{file,"core/tcp/client_handle.erl"},{line,130}]},
+     {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+     {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+     {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 22-Aug-2019::16:39:04 ===
+** Generic server <0.92.0> terminating 
+** Last message in was {tcp,#Port<0.1043>,
+                            <<129,143,211,80,46,43,168,114,30,83,227,97,12,17,
+                              241,57,64,77,188,114,83>>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.1043>}
+** Reason for termination == 
+** {{badmatch,[{<<"0x01">>,<<"info">>}]},
+    [{hub_client_gc_wc,loop,2,[{file,"hub_client_gc_wc.erl"},{line,36}]},
+     {client_handle,websocket_handle_data,1,
+                    [{file,"core/tcp/client_handle.erl"},{line,130}]},
+     {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+     {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+     {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 22-Aug-2019::16:39:29 ===
+** Generic server <0.93.0> terminating 
+** Last message in was {tcp,#Port<0.1044>,
+                            <<129,143,99,130,241,46,24,160,193,86,83,179,211,
+                              20,65,235,159,72,12,160,140>>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.1044>}
+** Reason for termination == 
+** {{badmatch,[{<<"0x01">>,<<"info">>}]},
+    [{hub_client_gc_wc,loop,2,[{file,"hub_client_gc_wc.erl"},{line,36}]},
+     {client_handle,websocket_handle_data,1,
+                    [{file,"core/tcp/client_handle.erl"},{line,130}]},
+     {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+     {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+     {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}

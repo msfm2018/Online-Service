@@ -1,0 +1,928 @@
+
+=ERROR REPORT==== 20-Aug-2019::20:29:42 ===
+** Generic server <0.90.0> terminating 
+** Last message in was timeout
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.725>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[timeout],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 20-Aug-2019::20:39:22 ===
+** Generic server <0.92.0> terminating 
+** Last message in was {tcp_closed,#Port<0.823>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.823>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.823>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 20-Aug-2019::20:39:32 ===
+** Generic server <0.93.0> terminating 
+** Last message in was {tcp_closed,#Port<0.824>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.824>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.824>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 20-Aug-2019::20:42:08 ===
+** Generic server <0.94.0> terminating 
+** Last message in was timeout
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.825>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[timeout],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 20-Aug-2019::22:11:54 ===
+** Generic server <0.95.0> terminating 
+** Last message in was timeout
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.826>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[timeout],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 20-Aug-2019::22:28:56 ===
+** Generic server <0.96.0> terminating 
+** Last message in was timeout
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.827>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[timeout],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 20-Aug-2019::22:41:03 ===
+** Generic server <0.97.0> terminating 
+** Last message in was {tcp_closed,#Port<0.828>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.828>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.828>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 20-Aug-2019::22:41:09 ===
+** Generic server <0.98.0> terminating 
+** Last message in was {tcp_closed,#Port<0.829>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.829>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.829>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 20-Aug-2019::22:42:05 ===
+** Generic server <0.99.0> terminating 
+** Last message in was {tcp_closed,#Port<0.830>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.830>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.830>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 20-Aug-2019::22:42:07 ===
+** Generic server <0.100.0> terminating 
+** Last message in was {tcp_closed,#Port<0.831>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.831>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.831>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 20-Aug-2019::22:42:54 ===
+** Generic server <0.101.0> terminating 
+** Last message in was {tcp_closed,#Port<0.832>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.832>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.832>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 20-Aug-2019::22:42:56 ===
+** Generic server <0.102.0> terminating 
+** Last message in was {tcp_closed,#Port<0.833>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.833>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.833>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 20-Aug-2019::22:42:57 ===
+** Generic server <0.103.0> terminating 
+** Last message in was {tcp_closed,#Port<0.834>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.834>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.834>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 20-Aug-2019::22:44:57 ===
+** Generic server <0.104.0> terminating 
+** Last message in was timeout
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.835>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[timeout],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 20-Aug-2019::22:45:10 ===
+** Generic server <0.105.0> terminating 
+** Last message in was {tcp_closed,#Port<0.836>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.836>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.836>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 20-Aug-2019::22:47:10 ===
+** Generic server <0.106.0> terminating 
+** Last message in was timeout
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.837>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[timeout],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 20-Aug-2019::22:48:33 ===
+** Generic server <0.107.0> terminating 
+** Last message in was {tcp_closed,#Port<0.838>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.838>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.838>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 20-Aug-2019::22:50:52 ===
+** Generic server <0.108.0> terminating 
+** Last message in was timeout
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.839>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[timeout],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 20-Aug-2019::22:56:32 ===
+** Generic server <0.109.0> terminating 
+** Last message in was {tcp_closed,#Port<0.840>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.840>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.840>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 20-Aug-2019::22:56:39 ===
+** Generic server <0.110.0> terminating 
+** Last message in was {tcp_closed,#Port<0.841>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.841>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.841>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 20-Aug-2019::22:56:41 ===
+** Generic server <0.111.0> terminating 
+** Last message in was {tcp_closed,#Port<0.842>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.842>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.842>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 20-Aug-2019::22:57:16 ===
+** Generic server <0.112.0> terminating 
+** Last message in was {tcp_closed,#Port<0.843>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.843>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.843>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 21-Aug-2019::22:54:24 ===
+** Generic server <0.113.0> terminating 
+** Last message in was timeout
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.844>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[timeout],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 21-Aug-2019::22:58:02 ===
+** Generic server <0.114.0> terminating 
+** Last message in was {tcp_closed,#Port<0.845>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.845>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.845>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 21-Aug-2019::22:59:03 ===
+** Generic server <0.115.0> terminating 
+** Last message in was {tcp_closed,#Port<0.846>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.846>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.846>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 21-Aug-2019::22:59:04 ===
+** Generic server <0.116.0> terminating 
+** Last message in was {tcp_closed,#Port<0.847>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.847>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.847>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 21-Aug-2019::22:59:04 ===
+** Generic server <0.117.0> terminating 
+** Last message in was {tcp_closed,#Port<0.848>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.848>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.848>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 21-Aug-2019::22:59:29 ===
+** Generic server <0.118.0> terminating 
+** Last message in was {tcp_closed,#Port<0.849>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.849>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.849>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 21-Aug-2019::23:00:46 ===
+** Generic server <0.119.0> terminating 
+** Last message in was {tcp_closed,#Port<0.850>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.850>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.850>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 21-Aug-2019::23:01:25 ===
+** Generic server <0.120.0> terminating 
+** Last message in was {tcp_closed,#Port<0.851>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.851>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.851>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 21-Aug-2019::23:02:23 ===
+** Generic server <0.121.0> terminating 
+** Last message in was {tcp_closed,#Port<0.852>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.852>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.852>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 21-Aug-2019::23:04:42 ===
+** Generic server <0.122.0> terminating 
+** Last message in was timeout
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.853>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[timeout],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 21-Aug-2019::23:06:27 ===
+** Generic server <0.123.0> terminating 
+** Last message in was {tcp,#Port<0.854>,
+                            <<129,134,193,170,253,163,242,158,200,151,242,159>>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.854>}
+** Reason for termination == 
+** {{badmatch,["45435"]},
+    [{hub_client_gc_wc,receive_data,3,
+                       [{file,"src/hub_client_gc_wc.erl"},{line,95}]},
+     {client_handle,websocket_handle_data,1,
+                    [{file,"src/core/tcp/client_handle.erl"},{line,130}]},
+     {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+     {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+     {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 21-Aug-2019::23:08:10 ===
+** Generic server <0.124.0> terminating 
+** Last message in was {tcp_closed,#Port<0.855>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.855>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.855>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 21-Aug-2019::23:08:40 ===
+** Generic server <0.125.0> terminating 
+** Last message in was {tcp_closed,#Port<0.856>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.856>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.856>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 21-Aug-2019::23:09:30 ===
+** Generic server <0.126.0> terminating 
+** Last message in was {tcp_closed,#Port<0.857>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.857>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.857>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 21-Aug-2019::23:11:48 ===
+** Generic server <0.127.0> terminating 
+** Last message in was timeout
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.858>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[timeout],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 21-Aug-2019::23:12:24 ===
+** Generic server <0.128.0> terminating 
+** Last message in was {tcp_closed,#Port<0.859>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.859>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.859>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 21-Aug-2019::23:14:23 ===
+** Generic server <0.129.0> terminating 
+** Last message in was timeout
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.860>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[timeout],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 21-Aug-2019::23:17:25 ===
+** Generic server <0.130.0> terminating 
+** Last message in was timeout
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.861>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[timeout],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 21-Aug-2019::23:18:45 ===
+** Generic server <0.131.0> terminating 
+** Last message in was {tcp_closed,#Port<0.862>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.862>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.862>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 21-Aug-2019::23:24:24 ===
+** Generic server <0.132.0> terminating 
+** Last message in was {tcp_closed,#Port<0.863>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.863>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.863>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 21-Aug-2019::23:26:22 ===
+** Generic server <0.133.0> terminating 
+** Last message in was timeout
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.864>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[timeout],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 21-Aug-2019::23:34:04 ===
+** Generic server <0.134.0> terminating 
+** Last message in was timeout
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.865>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[timeout],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 21-Aug-2019::23:35:48 ===
+** Generic server <0.135.0> terminating 
+** Last message in was {tcp_closed,#Port<0.866>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.866>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.866>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 21-Aug-2019::23:36:48 ===
+** Generic server <0.136.0> terminating 
+** Last message in was {tcp_closed,#Port<0.867>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.867>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.867>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 21-Aug-2019::23:38:47 ===
+** Generic server <0.137.0> terminating 
+** Last message in was timeout
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.868>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[timeout],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 21-Aug-2019::23:41:57 ===
+** Generic server <0.138.0> terminating 
+** Last message in was {tcp_closed,#Port<0.869>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.869>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.869>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 21-Aug-2019::23:43:56 ===
+** Generic server <0.139.0> terminating 
+** Last message in was timeout
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.870>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[timeout],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 21-Aug-2019::23:46:49 ===
+** Generic server <0.140.0> terminating 
+** Last message in was timeout
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.871>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[timeout],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 21-Aug-2019::23:52:44 ===
+** Generic server <0.141.0> terminating 
+** Last message in was {tcp,#Port<0.872>,
+                            <<129,132,34,191,197,218,17,139,247,208>>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.872>}
+** Reason for termination == 
+** {{badmatch,["42\n"]},
+    [{hub_client_gc_wc,receive_data,3,
+                       [{file,"src/hub_client_gc_wc.erl"},{line,95}]},
+     {client_handle,websocket_handle_data,1,
+                    [{file,"src/core/tcp/client_handle.erl"},{line,130}]},
+     {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+     {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+     {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 21-Aug-2019::23:55:05 ===
+** Generic server <0.142.0> terminating 
+** Last message in was {tcp_closed,#Port<0.873>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.873>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.873>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 21-Aug-2019::23:57:23 ===
+** Generic server <0.143.0> terminating 
+** Last message in was timeout
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.874>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[timeout],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 22-Aug-2019::00:00:46 ===
+** Generic server <0.144.0> terminating 
+** Last message in was timeout
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.875>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[timeout],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 22-Aug-2019::06:03:32 ===
+** Generic server <0.147.0> terminating 
+** Last message in was {tcp_closed,#Port<0.878>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.878>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.878>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 22-Aug-2019::06:03:33 ===
+** Generic server <0.146.0> terminating 
+** Last message in was {tcp_closed,#Port<0.877>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.877>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.877>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 22-Aug-2019::06:03:34 ===
+** Generic server <0.145.0> terminating 
+** Last message in was {tcp_closed,#Port<0.876>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.876>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.876>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 22-Aug-2019::06:08:31 ===
+** Generic server <0.148.0> terminating 
+** Last message in was {tcp_closed,#Port<0.879>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.879>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.879>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"src/hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"src/core/tcp/client_handle.erl"},
+                            {line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}

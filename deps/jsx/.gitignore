@@ -1,0 +1,14 @@
+.eunit
+deps
+ebin
+*.o
+*.beam
+*.plt
+erl_crash.dump
+.DS_Store
+doc
+.rebar
+*.sublime-*
+rebar3
+_build/
+

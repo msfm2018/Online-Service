@@ -1,0 +1,18 @@
+
+=ERROR REPORT==== 22-Aug-2019::19:40:44 ===
+** Generic server <0.90.0> terminating 
+** Last message in was {tcp,#Port<0.915>,
+                            <<129,143,45,149,149,52,86,183,165,76,29,164,183,
+                              14,15,252,251,82,66,183,232>>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.915>}
+** Reason for termination == 
+** {'module could not be loaded',
+       [{uuid,uuid1,[],[]},
+        {hub_client_gc_wc,receive_data,3,
+            [{file,"hub_client_gc_wc.erl"},{line,47}]},
+        {client_handle,websocket_handle_data,1,
+            [{file,"core/tcp/client_handle.erl"},{line,130}]},
+        {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+        {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+        {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}

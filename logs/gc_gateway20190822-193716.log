@@ -1,0 +1,16 @@
+
+=ERROR REPORT==== 22-Aug-2019::19:37:38 ===
+** Generic server <0.90.0> terminating 
+** Last message in was {tcp,#Port<0.915>,
+                            <<129,143,142,212,82,21,245,246,98,109,190,229,
+                              112,47,172,189,60,115,225,246,47>>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.915>}
+** Reason for termination == 
+** {{badmatch,[{<<"0x01">>,<<"info">>}]},
+    [{hub_client_gc_wc,loop,2,[{file,"hub_client_gc_wc.erl"},{line,38}]},
+     {client_handle,websocket_handle_data,1,
+                    [{file,"core/tcp/client_handle.erl"},{line,130}]},
+     {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+     {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+     {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}

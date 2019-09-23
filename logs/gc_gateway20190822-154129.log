@@ -1,0 +1,29 @@
+
+=ERROR REPORT==== 22-Aug-2019::15:41:35 ===
+** Generic server <0.90.0> terminating 
+** Last message in was {tcp,#Port<0.810>,
+                            <<129,254,0,145,187,59,137,82,192,25,250,55,213,
+                              95,236,32,210,95,171,104,153,90,235,49,138,9,
+                              186,112,151,25,231,59,216,80,171,104,153,90,235,
+                              49,153,23,171,63,200,92,253,43,203,94,171,104,
+                              153,79,236,42,207,25,165,112,216,84,231,38,222,
+                              85,253,112,129,25,231,59,211,90,230,112,151,25,
+                              250,55,213,95,253,59,214,94,171,104,153,9,185,
+                              99,130,22,185,106,150,9,186,114,139,13,179,102,
+                              138,1,186,97,153,23,171,63,200,92,224,54,153,1,
+                              171,98,136,9,184,98,249,126,202,23,136,13,186,
+                              102,140,11,204,107,130,15,204,106,136,122,204,
+                              102,255,120,177,16,143,122,204,112,198>>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.810>}
+** Reason for termination == 
+** {'module could not be loaded',
+       [{jsx,decode,
+            [<<"{\"senderid\":\"abc123\",\"nick\":\"abc\",\"msgtype\":\"text\",\"content\":\"nihao\",\"sendtime\":\"2019-08-23 06:41:33\",\"msgid\":\"03210BECE363470E994E83AE4DC8B4AE\"}">>],
+            []},
+        {hub_client_gc_wc,loop,2,[{file,"hub_client_gc_wc.erl"},{line,26}]},
+        {client_handle,websocket_handle_data,1,
+            [{file,"core/tcp/client_handle.erl"},{line,114}]},
+        {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+        {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+        {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}

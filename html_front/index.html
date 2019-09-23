@@ -1,0 +1,447 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>客服</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!--    <script src="http://www.weizoom.com/static/resources/js/jquery-1.7.1.min.js"></script>-->
+</head>
+<body >
+<h3>
+    <span style="color:#e74c3c;animation-delay: 0s;">专业的在线客服供应商 完善的售后服务体系 提供万人在线咨询服务</span>
+</h3>
+
+<div class="dialogue-wrapper">
+    <div id="btn_open" class="dialogue-support-btn">
+        <i class="dialogue-support-icon"></i>
+        <i class="dialogue-support-line"></i>
+        <span class="dialogue-support-text">联系客服</span>
+    </div>
+    <div class="dialogue-main">
+        <div class="dialogue-header">
+            <i id="btn_close" class="dialogue-close">></i>
+            <div class="dialogue-service-info">
+
+                <!--                <i class="dialogue-service-img" > -->
+                <img src="https://car3.autoimg.cn/cardfs/product/g3/M07/ED/30/1024x0_1_q95_autohomecar__ChsEkV1h2R-AWDfVAAW9-B2cHVo143.jpg"
+                     width="50" height="50" class="dialogue-service-img">
+                <!--                    头像</i>-->
+                <div class="dialogue-service-title">
+                    <p class="dialogue-service-name">HiTalk客服</p>
+                    <p class="dialogue-service-detail">HiTalk客服支持平台</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="dialogue_contain" class="dialogue-contain">
+            <p class="dialogue-service-contain"><span class="dialogue-text dialogue-service-text">您好,我有什么可以帮助您</span></p>
+            <!-- <p class="dialogue-customer-contain"><span class="dialogue-text dialogue-customer-text">我有个问题</span></p> -->
+        </div>
+        <div class="dialogue-submit">
+            <p id="dialogue_hint" class="dialogue-hint"><span class="dialogue-hint-icon">!</span><span
+                    class="dialogue-hint-text">发送内容不能为空</span></p>
+            <textarea id="dialogue_input" class="dialogue-input-text"
+                      placeholder="请输入您的问题，按Enter键提交（shift+Enter换行）"></textarea>
+            <div class="dialogue-input-tools">
+              <!--      小工具预留位置-->
+
+                <div class="demo">
+                        <i class="button white" id="btn_send">发送</i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+
+
+
+
+    var websocket;
+    var kefu_id_;
+
+    var account_;
+
+    //定时器
+    var clock_int;
+
+    //  $(document).ready(init);
+    window.onunload=function(event) {
+        disconnect()
+    }
+
+    function init(ip,port) {
+        if ("WebSocket" in window) {    
+            connect(ip,port);
+        }
+        ;
+    };
+
+    function connect(ip,port) {
+
+        // wsHost ="ws://192.168.1.100:20001";// $("#server").val()
+        wsHost ="ws://127.0.0.1:20009";// $("#server").val()
+        websocket = new WebSocket(wsHost);
+        websocket.onopen = function (evt) {
+            onOpen(evt)
+        };
+        websocket.onclose = function (evt) {
+            onClose(evt)
+        };
+        websocket.onmessage = function (evt) {
+            onMessage(evt)
+        };
+        websocket.onerror = function (evt) {
+            onError(evt)
+        };
+
+    };
+
+    function Login(name) {
+        websocket.send(name);
+
+    }
+
+    // tpull_msg_unpack = record
+    // senderid, // 发送者id
+    //     toid, nick, // 发送者昵称
+    //     msgtype, // 个人/群组
+    //     content, sendtime: string;
+    // msgid: string;
+    // end;
+   
+
+    function protocol_handle(js_value) {
+        if (js_value.protocol == 1) {
+            var text = {"0x02": js_value.data[0].account};
+            account_ = js_value.data[0].account;
+            Login(JSON.stringify(text));
+
+        } else if (js_value.protocol == 6) {
+            //客服id
+            kefu_id_ = js_value.data[0].toid;
+
+            console.log(js_value.data[0].toid);
+        }
+
+    }
+
+
+    //{"resultCode":0,"resultMsg":"ok","protocol":1,"data":{"account":"52482717"}}
+    function onMessage(evt) {
+        var js_value = JSON.parse(evt.data);
+        if (js_value.resultCode == 0) {
+			if (js_value.protocol == 5)
+			{
+				
+  var string = js_value.data;
+            var bb = JSON.parse(string);
+recv_data(bb.content);
+
+			} else
+            protocol_handle(js_value);
+
+        } else
+		{
+			var errorid=js_value.resultCode;
+	     	error_handle(errorid);
+		}
+    }
+
+    function disconnect() {
+        if (websocket.readyState == websocket.OPEN) {
+			var d = new Date();
+var year = d.getFullYear();
+
+var month = d.getMonth()+1;
+var day = d.getDate();
+var dt=year+'-'+month+'-'+day+' '+d.getHours()+':'+d.getMinutes();//+':'+d.getSeconds();
+
+ var gv = {
+                "senderid": account_,
+                "toid": kefu_id_,
+                "nick": "",
+                "msgtype": "text",
+                "content":"访客"+ account_+"已离线",
+                "sendtime": dt,
+                "msgid": ""
+            };
+            var text = {"0x03_web_visitor": gv};
+            websocket.send(JSON.stringify(text));
+
+            kefu_id_="";
+            websocket.close(1000);
+
+        }
+    }
+
+  //  function sendTxt() {
+   //     if (websocket.readyState == websocket.OPEN) {
+    //        var txt = $("#dialogue_input").val();
+   //         websocket.send(txt);
+    //    } else {
+    //        console.log('websocket is not connected');
+    //    }
+   //     ;
+ //   };
+
+
+    function clock() {
+        var text = {"0x07":"heart_"};
+        websocket.send(JSON.stringify(text));
+        console.log('heart_')
+    }
+
+    //发送请求账号信息
+    function onOpen(evt) {
+        var text = '{"0x01":"info"}';
+        websocket.send(text);
+        clock_int = self.setInterval("clock()", 20000);
+    };
+
+    //关闭定时器
+    function onClose(evt) {
+        window.clearInterval(clock_int);
+    };
+
+    function onError(evt) {
+        window.clearInterval(clock_int);
+    };
+
+    function submitText(text) {
+  if (websocket.readyState == websocket.OPEN) {
+
+var d = new Date();
+var year = d.getFullYear();
+
+var month = d.getMonth()+1;
+var day = d.getDate();
+var dt=year+'-'+month+'-'+day+' '+d.getHours()+':'+d.getMinutes();//+':'+d.getSeconds();
+
+
+
+
+
+        if (kefu_id_ == undefined || kefu_id_ == "") {
+        
+            var gv = {
+                "senderid": account_,
+                "toid": "",
+                "nick": "",
+                "msgtype": "text",
+                "content": text,
+                "sendtime": dt,
+                "msgid": ""
+            };
+            var text = {"0x03_web_visitor": gv};
+            websocket.send(JSON.stringify(text));
+        } else {
+         
+            var gv = {
+                "senderid": account_,
+                "toid": kefu_id_,
+                "nick": "",
+                "msgtype": "text",
+                "content": text,
+                "sendtime": dt,
+                "msgid": ""
+            };
+            var text = {"0x03_web_visitor": gv};
+            websocket.send(JSON.stringify(text));
+        }
+		return true;
+     } else
+	 return false
+    }
+
+
+
+    //对话相关
+    var doc = document;
+
+ function recv_data(content) { 
+            var nodeP = doc.createElement('p'),
+                nodeSpan = doc.createElement('span');
+            nodeP.classList.add('dialogue-service-contain');
+            nodeSpan.classList.add('dialogue-text', 'dialogue-service-text');
+            nodeSpan.innerHTML = content;
+            nodeP.appendChild(nodeSpan);
+            dialogueContain.appendChild(nodeP);
+            dialogueContain.scrollTop = dialogueContain.scrollHeight;
+        
+
+    }
+    function error_handle(errorid) {
+        switch (errorid) {
+            case  -1:
+                // {"resultCode":-1,"resultMsg":"leave","protocol":3,"data":[]}
+
+                var nodeP = doc.createElement('p'),
+                    nodeSpan = doc.createElement('span');
+                nodeP.classList.add('dialogue-service-contain');
+                nodeSpan.classList.add('dialogue-text', 'dialogue-service-text');
+                nodeSpan.innerHTML = "客服未在线";
+                nodeP.appendChild(nodeSpan);
+                dialogueContain.appendChild(nodeP);
+                dialogueContain.scrollTop = dialogueContain.scrollHeight;
+
+
+                break;
+            case -2:
+                var nodeP = doc.createElement('p'),
+                    nodeSpan = doc.createElement('span');
+                nodeP.classList.add('dialogue-service-contain');
+                nodeSpan.classList.add('dialogue-text', 'dialogue-service-text');
+                nodeSpan.innerHTML = "客服已离线,稍后再试";
+
+                nodeP.appendChild(nodeSpan);
+                dialogueContain.appendChild(nodeP);
+                dialogueContain.scrollTop = dialogueContain.scrollHeight;
+                kefu_id_ = "";
+                break;
+        }
+    }
+
+
+    var dialogueInput = doc.getElementById('dialogue_input'),
+        dialogueContain = doc.getElementById('dialogue_contain'),
+        dialogueHint = doc.getElementById('dialogue_hint'),
+        btnOpen = doc.getElementById('btn_open'),
+        btnClose = doc.getElementById('btn_close'),
+        timer,
+        timerId,
+        shiftKeyOn = false;  // 辅助判断shift键是否按住
+
+    $("#btn_send").click(function (){      
+
+	if (  submitText(dialogueInput.value)==true)
+		{           
+            var nodeP = doc.createElement('p'),
+            nodeSpan = doc.createElement('span');
+            nodeP.classList.add('dialogue-customer-contain');
+            nodeSpan.classList.add('dialogue-text', 'dialogue-customer-text');
+            nodeSpan.innerHTML = dialogueInput.value;
+            nodeP.appendChild(nodeSpan);
+            dialogueContain.appendChild(nodeP);
+            dialogueContain.scrollTop = dialogueContain.scrollHeight;
+			dialogueInput.value = null;
+          }
+
+    });
+
+    btnOpen.addEventListener('click', function (e) {
+        $('.dialogue-support-btn').css({'display': 'none'});
+        $('.dialogue-main').css({'display': 'inline-block', 'height': '0'});
+        $('.dialogue-main').animate({'height': '600px'})
+
+        $(document).ready(init("39.105.2.165","20009"));
+    })
+
+    btnClose.addEventListener('click', function (e) {
+        $('.dialogue-main').animate({'height': '0'}, function () {
+            $('.dialogue-main').css({'display': 'none'});
+            $('.dialogue-support-btn').css({'display': 'inline-block'});
+        });
+        disconnect();
+    })
+
+    dialogueInput.addEventListener('keydown', function (e) {
+        var e = e || window.event;
+        if (e.keyCode == 16) {
+            shiftKeyOn = true;
+        }
+        if (shiftKeyOn) {
+            return true;
+        } else if (e.keyCode == 13 && dialogueInput.value == '') {
+            // console.log('发送内容不能为空');
+            // 多次触发只执行最后一次渐隐
+            setTimeout(function () {
+                fadeIn(dialogueHint);
+                clearTimeout(timerId)
+                timer = setTimeout(function () {
+                    fadeOut(dialogueHint)
+                }, 2000);
+            }, 10);
+            timerId = timer;
+            return true;
+        } else if (e.keyCode == 13) {
+
+if (  submitText(dialogueInput.value)==true)
+{
+
+           
+            var nodeP = doc.createElement('p'),
+                nodeSpan = doc.createElement('span');
+            nodeP.classList.add('dialogue-customer-contain');
+            nodeSpan.classList.add('dialogue-text', 'dialogue-customer-text');
+            nodeSpan.innerHTML = dialogueInput.value;
+            nodeP.appendChild(nodeSpan);
+            dialogueContain.appendChild(nodeP);
+            dialogueContain.scrollTop = dialogueContain.scrollHeight;
+          }
+        }
+    });
+
+    dialogueInput.addEventListener('keyup', function (e) {
+        var e = e || window.event;
+        if (e.keyCode == 16) {
+            shiftKeyOn = false;
+            return true;
+        }
+        if (!shiftKeyOn && e.keyCode == 13) {
+            console.log("666666666666666666666666");
+            // sendTxt();
+
+
+            dialogueInput.value = null;
+        }
+    });
+
+
+
+    // 渐隐
+    function fadeOut(obj) {
+        var n = 100;
+        var time = setInterval(function () {
+            if (n > 0) {
+                n -= 10;
+                obj.style.opacity = '0.' + n;
+            } else if (n <= 30) {
+                obj.style.opacity = '0';
+                clearInterval(time);
+            }
+        }, 10);
+        return true;
+    }
+
+    // 渐显
+    function fadeIn(obj) {
+        var n = 30;
+        var time = setInterval(function () {
+            if (n < 90) {
+                n += 10;
+                obj.style.opacity = '0.' + n;
+            } else if (n >= 80) {
+
+                obj.style.opacity = '1';
+                clearInterval(time);
+            }
+        }, 100);
+        return true;
+    }
+
+
+</script>
+</body>
+</html>

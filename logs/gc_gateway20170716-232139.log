@@ -1,0 +1,15 @@
+
+=ERROR REPORT==== 16-Jul-2017::23:22:48 ===
+** Generic server <0.90.0> terminating 
+** Last message in was {tcp_closed,#Port<0.725>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.725>}
+** Reason for termination == 
+** {badarg,[{erlang,binary_to_list,[{tcp_closed,#Port<0.725>}],[]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"hub_client_gc_wc.erl"},{line,25}]},
+            {client_handle,handle_info,2,
+                           [{file,"core/tcp/client_handle.erl"},{line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}

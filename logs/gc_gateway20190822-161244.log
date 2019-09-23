@@ -1,0 +1,60 @@
+
+=ERROR REPORT==== 22-Aug-2019::16:13:18 ===
+** Generic server <0.90.0> terminating 
+** Last message in was {tcp,#Port<0.915>,<<136,130,102,132,2,104,101,108>>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.915>}
+** Reason for termination == 
+** {badarg,[{jsx_decoder,value,4,[{file,"src/jsx_decoder.erl"},{line,234}]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"hub_client_gc_wc.erl"},{line,38}]},
+            {client_handle,websocket_handle_data,1,
+                           [{file,"core/tcp/client_handle.erl"},{line,130}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 22-Aug-2019::16:16:15 ===
+** Generic server <0.92.0> terminating 
+** Last message in was {tcp_closed,#Port<0.1043>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.1043>}
+** Reason for termination == 
+** {badarg,[{jsx_decoder,value,4,[{file,"src/jsx_decoder.erl"},{line,234}]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"hub_client_gc_wc.erl"},{line,38}]},
+            {client_handle,handle_info,2,
+                           [{file,"core/tcp/client_handle.erl"},{line,76}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 22-Aug-2019::16:19:09 ===
+** Generic server <0.93.0> terminating 
+** Last message in was {tcp,#Port<0.1044>,<<136,130,122,140,36,70,121,100>>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.1044>}
+** Reason for termination == 
+** {badarg,[{jsx_decoder,value,4,[{file,"src/jsx_decoder.erl"},{line,234}]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"hub_client_gc_wc.erl"},{line,38}]},
+            {client_handle,websocket_handle_data,1,
+                           [{file,"core/tcp/client_handle.erl"},{line,130}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 22-Aug-2019::16:22:04 ===
+** Generic server <0.94.0> terminating 
+** Last message in was {tcp,#Port<0.1045>,<<136,130,48,43,60,54,51,195>>}
+** When Server state == {state,2,<<>>,[],#Fun<hub_client_gc_wc.loop.2>,
+                               #Port<0.1045>}
+** Reason for termination == 
+** {badarg,[{jsx_decoder,value,4,[{file,"src/jsx_decoder.erl"},{line,234}]},
+            {hub_client_gc_wc,loop,2,
+                              [{file,"hub_client_gc_wc.erl"},{line,38}]},
+            {client_handle,websocket_handle_data,1,
+                           [{file,"core/tcp/client_handle.erl"},{line,130}]},
+            {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+            {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+            {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
